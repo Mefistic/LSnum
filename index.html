@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LSnum</title>
+</head>
+<body>
+<style type="text/css">
+
+	body
+	{
+		background-color: #111;
+		color: #AAA;
+		font-family: monospace;
+		font-size: 1.1vw;
+		font-weight: lighter;
+		line-height: 1.7vw;
+	}
+
+	b
+	{
+		color: #EEE;
+		font-weight: 900;
+		font-size: 1vw;
+	}
+
+</style>
+<div>
+
+<b>LIGHTSPEED Numbers</b> <br>
+<br>
+Minimum Number = ~1e1.8e-308 <br>
+Maximum Number = ~1e1.8e+308 <br>
+<br>
+<b>Credits</b> <br>
+<br>
+aarextiaokhiao - Made Logarithmica Numerus Lite, the library i based this one from. <br>
+WolframAlpha - Great for testing. <br>
+<br>
+<b>Documentation</b> <br>
+<br>
+The syntax is very simple, everything is based on this: <br>
+LS(OPERATION, NUMBER1, NUMBER2) <br>
+<br>
+<b>Operations</b> <br>
+<br>
+New: <br>
+Makes a new LS number object. <br>
+Usage: <br>
+LS('new', '1.8e308') <br>
+LS('new', '1.8e-308') <br>
+<br>
+Add: <br>
+Adds two values. <br>
+Usage: <br>
+LS('add', 'x1', 'x2') = x1 + x2 <br>
+<br>
+Sub: <br>
+Subtracts the first value from the second. <br>
+Usage: <br>
+LS('sub', 'x1', 'x2') = x1 - x2 <br>
+<br>
+Mul: <br>
+Multiplies two values. <br>
+Usage: <br>
+LS('mul', 'x1', 'x2') = x1 * x2 <br>
+<br>
+Div: <br>
+Divides the first value by the second. <br>
+Usage: <br>
+LS('div', 'x1', 'x2') = x1 / x2 <br>
+<br>
+Pow: <br>
+Raises the first value to the power of the second value. <br>
+Usage: <br>
+LS('pow', 'x1', 'x2') = x1 ^ x2 <br>
+<br>
+Root: <br>
+Takes the root of the first value with a root index of the second value. <br>
+LS('root', 'x1', 'x2') = x2 √ x1 <br>
+<br>
+Log: <br>
+Takes the log of the first value with a log base of the second value. <br>
+LS('log', 'x1', 'x2') = log_x2(x1) <br>
+<br>
+Floor / Round / Ceil: <br>
+Rounds down, normally or up a value. <br>
+LS('floor', '1.1') = 1 <br>
+LS('round', '1.1') = 1 <br>
+LS('round', '1.9') = 2 <br>
+LS('ceil', '1.1') = 2 <br>
+<br>
+Max / Min: <br>
+Gets the maximum or minimum of two values. <br>
+LS('max', '1', '2') = 2 <br>
+LS('min', '1', '2') = 1 <br>
+<br>
+Lt / Lte / Eq / Gt / Gte: <br>
+Returns a boolean (true/false) comparing if it's: <br>
+Less Than: LS('lt', '1', '2') = x1 < x2 = true <br>
+Less Than or Equal To: LS('lte', '1', '2') = x1 < x2 = true <br>
+Equal to: LS('eq', '1', '2') = x1 == x2 = false <br>
+Greater Than: LS('gt', '1', '2') = x1 < x2 = false <br>
+Greater Than or Equal To: LS('gte', '1', '2') = x1 < x2 = false <br>
+ <br>
+</div>
+</body>
+<script src="LSnum.js"></script>
+</html>
